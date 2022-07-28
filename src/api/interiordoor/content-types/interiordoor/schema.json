@@ -1,10 +1,10 @@
 {
   "kind": "collectionType",
-  "collectionName": "doors",
+  "collectionName": "interiordoors",
   "info": {
-    "singularName": "door",
-    "pluralName": "doors",
-    "displayName": "door",
+    "singularName": "interiordoor",
+    "pluralName": "interiordoors",
+    "displayName": "Межкомнатные Двери",
     "description": ""
   },
   "options": {
@@ -18,11 +18,11 @@
     "height": {
       "type": "string"
     },
-    "madein": {
+    "info": {
       "type": "string"
     },
-    "info": {
-      "type": "text"
+    "madein": {
+      "type": "string"
     },
     "image": {
       "type": "media",
@@ -34,12 +34,6 @@
         "videos",
         "audios"
       ]
-    },
-    "door": {
-      "type": "relation",
-      "relation": "manyToOne",
-      "target": "api::category.category",
-      "inversedBy": "category"
     }
   }
 }
